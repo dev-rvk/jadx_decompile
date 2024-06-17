@@ -6,7 +6,7 @@ A docker image workflow to decompile android apk files.
 
 > [!IMPORTANT]  
 > Do the steps below for x86_64 (amd64) systems only.
-> Uncomment the part 
+> In the Dockerfile, uncomment the part 
 
 ```plaintext
     # For x86 systems
@@ -14,7 +14,7 @@ A docker image workflow to decompile android apk files.
     # RUN wget -qO- https://api.adoptopenjdk.net/v3/binary/latest/21/ga/linux/x64/jdk/hotspot/normal/adoptopenjdk | tar xvz -C /opt && \
     #     ln -s /opt/jdk-21.* /opt/java/openjdk
 ```
-> Comment the part
+> and comment the part
 ```plaintext
     # For ARM systems
     # Download and install Temurin (AdoptOpenJDK) 11
